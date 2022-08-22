@@ -1,0 +1,29 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url('imgs/background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#overlay{
+    width: 100%;
+    height:100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+    position: absolute;
+    margin: 0;
+    padding: 0;
+}
+
+#weather-box{
+    width: 40%;
+    height: 500px;
+    display: block;
+    border-radius: 7px;
+    background-color: #000;
+    margin-left: auto;
+    margin-right: auto;
+}
