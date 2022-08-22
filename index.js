@@ -1,7 +1,7 @@
 let weather= document.getElementById("weather");
 
 
-let getAPI= fetch("https://api.openweathermap.org/data/2.5/weather?lat=35&lon=139&appid=640823a7cd0206f7569c01210901078f")
+let getAPI= fetch("")
 .then(data=>{
   return  data.json();
 })
