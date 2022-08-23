@@ -3,9 +3,12 @@
 }
 
 body{
-    background-image: url('imgs/background.jpg');
+    background-image: url('imgs/background-photo.jpg');
     background-repeat: no-repeat;
     background-size: cover;
+    height: 100%;
+    background-position: center center;
+    background-attachment: fixed;
 }
 
 #overlay{
@@ -93,15 +96,6 @@ input::placeholder{
  #desc{
     text-transform: capitalize;
  }
-
- @media only screen and (max-width: 600px) {
-    #weather-box{
-        width: 90%;
-    }
-    #weather-deg{
-        font-size: larger;
-    }
- }
  .loading{
     visibility: hidden;
     position: relative;
@@ -118,3 +112,17 @@ input::placeholder{
     font-weight: 900;
     height: auto;
  }
+
+ @media only screen and (max-width: 600px) {
+    #weather-box{
+        width: 90%;
+        margin-top: 40%;
+    }
+    #weather-deg{
+        font-size: larger;
+    }
+    #overlay{
+        background-color: rgba(0, 0, 0, 0.3);
+    }
+ }
+ 
