@@ -6,11 +6,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather App</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 </head>
 <body>
     <div id="overlay"></div>
-    <div id="weather-box">
+    <div id="weather-box" >
+        <div id="search-area">
+            <input type="text" placeholder="Search" name="Search" id="search-bar">
+            <button id="search"><i class="fa fa-search"></i></button>
+        </div>
+        <div id="weather-info" class="loading">
+            <div id="weather-deg">
+            <p>Weather in <span id="city"> Lagos</span></p>
+            <p id="temp">51&deg;C</p>
+
+            </div>
+            <div>
+                <div id="weather-other">
+                    <div id="w-icon">
+                    <img src="https://openweathermap.org/img/wn/04n.png" alt="" id="icon" />
+                    <p id="weather-type">Cloudy</p>
+                </div>
+                    <p id="desc">Broken clouds</p>
+                    <p>Humidity: <span id="humidity">80%</span></p>
+                    <p>Wind Speed: <span id="wind-speed">4.2</span> km/h</p>
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 <script src="index.js"></script>
+<script src="https://kit.fontawesome.com/359f32df85.js" crossorigin="anonymous"></script>
 </html>
